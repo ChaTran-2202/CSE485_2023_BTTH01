@@ -87,5 +87,28 @@ WHERE
     ten_bhat LIKE "%yêu%" OR ten_bhat LIKE "%thương%" OR ten_bhat LIKE "%anh%" OR ten_bhat LIKE "%em%" OR tieude LIKE "%yêu%" OR tieude LIKE "%thương%" OR tieude LIKE "%anh%" OR tieude LIKE "%em%";
     /*i. Tạo view vw_Music hiển thị thông tin Danh sách bài viết + tên thể loại + tên tác giả*/
     /* View: bảng ảo, không chứa dữ liệu về mặt vật lí. Bản chất là 1 đoạn mã SQL được lưu vào server CSDL. Giúp dễ dàng truy vấn, tăng lớp bảo mật (các bảng với dữ liệu bảo mật sẽ không được truy vấn trực tiếp mà chỉ có những dữ liệu xác định được tuồn qua view mà thôi)*/
+CREATE VIEW vw_Music AS SELECT
+    ma_bviet,
+    tieude,
+    ten_tloai,
+    ten_tgia
+FROM
+    baiviet
+LEFT JOIN tacgia ON baiviet.ma_tgia = tacgia.ma_tgia
+LEFT JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai;
+    /*j. Tạo 1 thủ tục có tên sp_DSBaiViet với tham số truyền vào là Tên thể loại và trả về danh sách Bài viết của thể loại đó. Nếu thể loại không tồn tại thì hiển thị thông báo lỗi*/
+DROP
+PROCEDURE `sp_DSBaiViet`;
+CREATE DEFINER = `root`@`localhost` PROCEDURE `sp_DSBaiViet`(
+    IN `ten_tloai` VARCHAR(50) CHARSET utf8
+) NOT DETERMINISTIC CONTAINS SQL SQL SECURITY DEFINER
+SELECT
+    ten_tloai,
+    ma_bviet,
+    tieude
+FROM
+    baiviet
+JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai AND theloai.ten_tloai = ten_tloai;
     /*k. Tạo trigger tg_CapNhatTheLoai để khi thêm/sửa/xóa bài viết thì số lượng bài viết trong bảng theloai được cập nhật theo*/
     /*Trigger: Dùng để kiểm tra tính dàng buộc, ngăn chặn thao tác xóa các dữ liệu quan trọng hoặc được tận dụng để có các hàm chạy ngầm.*/
+ALTER TABLE theloai ADD SLBaiViet INT;
