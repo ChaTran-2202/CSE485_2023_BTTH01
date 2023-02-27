@@ -82,7 +82,7 @@ $baiviets   = $statement->fetchAll();
                             <img src= "images/songs/<?=$songs[$baiviet['ma_bviet']]?>"  class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">
-                                    <a href="./view/camnhan.php?id=<?= $baiviet['ma_bviet'];?>" class="text-decoration-none"> <?= $baiviet['ten_bhat'];?> </a>
+                                    <a href="./detail.php?id=<?=$baiviet['ma_bviet'];?>" class="text-decoration-none"> <?= $baiviet['ten_bhat'];?> </a>
                                 </h5>
                             </div>
                         </div> 
