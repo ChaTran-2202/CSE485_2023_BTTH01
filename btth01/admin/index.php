@@ -1,12 +1,6 @@
 <?php
 require '../includes/database-connection.php';
 
-$sql_sotloai = "SELECT COUNT(ma_tloai) FROM theloai";
-$sql_sotgia = "SELECT COUNT(ma_tgia) FROM tacgia";
-$sql_sobviet = "SELECT COUNT(ma_bviet) FROM baiviet";
-
-$statement = $pdo->query($sql_sotloai);
-$content  = $statement->fetch();
 ?>
 <!DOCTYPE html>
 <html lang="en">

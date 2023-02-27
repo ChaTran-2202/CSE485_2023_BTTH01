@@ -6,6 +6,7 @@ FROM
 INNER JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai
 WHERE
     theloai.ten_tloai = "Nhạc trữ tình";
+
     /*b. Liệt kê các bài viết của tác giả “Nhacvietplus”*/
 SELECT
     baiviet.*
@@ -14,6 +15,7 @@ FROM
 INNER JOIN tacgia ON baiviet.ma_tgia = tacgia.ma_tgia
 WHERE
     tacgia.ten_tgia = "Nhacvietplus";
+
     /*c. Liệt kê các thể loại nhạc chưa có bài viết cảm nhận nào*/
 SELECT
     theloai.ten_tloai
@@ -28,6 +30,7 @@ WHERE NOT
     WHERE
         theloai.ma_tloai = baiviet.ma_tloai
 );
+
 /*d. Liệt kê các bài viết với các thông tin sau: mã bài viết, tên bài viết, tên bài hát, tên tác giả, tên thể loại, ngày viết.*/
 SELECT
     ma_bviet,
@@ -40,6 +43,7 @@ FROM
     baiviet
 LEFT JOIN tacgia ON baiviet.ma_tgia = tacgia.ma_tgia
 LEFT JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai;
+
     /*e. Tìm thể loại có số bài viết nhiều nhất*/
 SELECT
     theloai.ten_tloai,
@@ -58,6 +62,7 @@ HAVING
     GROUP BY
         baiviet.ma_tloai
 );
+
 /*f. Liệt kê 2 tác giả có số bài viết nhiều nhất*/
 CREATE TEMPORARY TABLE groupmatg AS SELECT
     ma_tgia,
@@ -92,6 +97,7 @@ WHERE
         groupmatg
 )
 );
+
 /*g. Liệt kê các bài viết về các bài hát có tựa bài hát chứa 1 trong các từ “yêu”, “thương”, “anh”, “em”*/
 SELECT
     *
@@ -99,6 +105,7 @@ FROM
     baiviet
 WHERE
     ten_bhat LIKE "%yêu%" OR ten_bhat LIKE "%thương%" OR ten_bhat LIKE "%anh%" OR ten_bhat LIKE "%em%";
+
     /*h. Liệt kê các bài viết về các bài hát có tiêu đề bài viết hoặc tựa bài hát chứa 1 trong các từ “yêu”, “thương”, “anh”, “em”*/
 SELECT
     *
@@ -106,6 +113,7 @@ FROM
     baiviet
 WHERE
     ten_bhat LIKE "%yêu%" OR ten_bhat LIKE "%thương%" OR ten_bhat LIKE "%anh%" OR ten_bhat LIKE "%em%" OR tieude LIKE "%yêu%" OR tieude LIKE "%thương%" OR tieude LIKE "%anh%" OR tieude LIKE "%em%";
+
     /*i. Tạo view vw_Music hiển thị thông tin Danh sách bài viết + tên thể loại + tên tác giả*/
     /* View: bảng ảo, không chứa dữ liệu về mặt vật lí. Bản chất là 1 đoạn mã SQL được lưu vào server CSDL. Giúp dễ dàng truy vấn, tăng lớp bảo mật (các bảng với dữ liệu bảo mật sẽ không được truy vấn trực tiếp mà chỉ có những dữ liệu xác định được tuồn qua view mà thôi)*/
 CREATE VIEW vw_Music AS SELECT
@@ -117,6 +125,7 @@ FROM
     baiviet
 LEFT JOIN tacgia ON baiviet.ma_tgia = tacgia.ma_tgia
 LEFT JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai;
+
     /*j. Tạo 1 thủ tục có tên sp_DSBaiViet với tham số truyền vào là Tên thể loại và trả về danh sách Bài viết của thể loại đó. Nếu thể loại không tồn tại thì hiển thị thông báo lỗi*/
 DROP
 PROCEDURE `sp_DSBaiViet`;
@@ -130,6 +139,7 @@ SELECT
 FROM
     baiviet
 JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai AND theloai.ten_tloai = ten_tloai;
+
     /*k. Tạo trigger tg_CapNhatTheLoai để khi thêm/sửa/xóa bài viết thì số lượng bài viết trong bảng theloai được cập nhật theo*/
     /*Trigger: Dùng để kiểm tra tính dàng buộc, ngăn chặn thao tác xóa các dữ liệu quan trọng hoặc được tận dụng để có các hàm chạy ngầm.*/
 ALTER TABLE theloai ADD SLBaiViet INT;
