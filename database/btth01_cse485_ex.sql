@@ -59,18 +59,39 @@ HAVING
         baiviet.ma_tloai
 );
 /*f. Liệt kê 2 tác giả có số bài viết nhiều nhất*/
+CREATE TEMPORARY TABLE groupmatg AS SELECT
+    ma_tgia,
+    COUNT(*) AS so_bai_viet
+FROM
+    baiviet
+GROUP BY
+    ma_tgia;
+
 SELECT
     tacgia.ten_tgia,
-    COUNT(baiviet.ma_tgia) AS soluong_bviet
+    groupmatg.so_bai_viet
 FROM
     tacgia
-JOIN baiviet ON tacgia.ma_tgia = baiviet.ma_tgia
-GROUP BY
-    baiviet.ma_tgia
-ORDER BY
-    soluong_bviet
-DESC
-LIMIT 2;
+INNER JOIN groupmatg ON tacgia.ma_tgia = groupmatg.ma_tgia
+WHERE
+    so_bai_viet IN(
+    SELECT
+        MAX(so_bai_viet)
+    FROM
+        groupmatg
+    UNION
+SELECT
+    MAX(so_bai_viet)
+FROM
+    groupmatg
+WHERE
+    so_bai_viet <(
+    SELECT
+        MAX(so_bai_viet)
+    FROM
+        groupmatg
+)
+);
 /*g. Liệt kê các bài viết về các bài hát có tựa bài hát chứa 1 trong các từ “yêu”, “thương”, “anh”, “em”*/
 SELECT
     *
