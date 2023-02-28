@@ -1,6 +1,7 @@
 <?php
 require '../includes/database-connection.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

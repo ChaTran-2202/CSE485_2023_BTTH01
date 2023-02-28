@@ -4,6 +4,7 @@ $sql = "SELECT ma_tloai, ten_tloai FROM theloai";
 $statement = $pdo->query($sql);
 $result = $statement->fetchAll();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -18,14 +18,9 @@
 require './includes/database-connection.php';       
                 // Functions 
 $sql       = "SELECT ma_bviet, ten_bhat FROM baiviet;"; // SQL
-$statement = $pdo->query($sql);   
-
-$baiviets   = $statement->fetchAll();  
-                    
+$statement = $pdo->query($sql);
+$baiviets   = $statement->fetchAll();
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
