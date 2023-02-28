@@ -2,11 +2,9 @@
 $type     = 'mysql';                 
 $server   = 'localhost';           
 $db       = 'btth01_cse485';            
-<<<<<<< HEAD
+
 $port     = '3307';
-=======
-$port     = '3306';
->>>>>>> fd74055147e9cb690f6b879ccb63e9c9457960e4
+
 $charset  = 'utf8mb4';            
 
 $username = 'root';        
