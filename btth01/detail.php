@@ -27,6 +27,14 @@ $sql       = "SELECT baiviet.ma_bviet , baiviet.ten_bhat , theloai.ten_tloai , b
                 INNER JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai 
                 INNER JOIN tacgia ON baiviet.ma_tgia = tacgia.ma_tgia 
                 WHERE baiviet.ma_bviet = {$_GET['id']}"; // SQL
+<<<<<<< HEAD
+=======
+
+$statement = $pdo->query($sql);   
+ $content  = $statement->fetch(); 
+
+
+>>>>>>> fd74055147e9cb690f6b879ccb63e9c9457960e4
 
 $statement = $pdo->query($sql);  
 $content  = $statement->fetch(); 

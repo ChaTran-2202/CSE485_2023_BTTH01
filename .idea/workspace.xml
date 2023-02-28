@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a98a351e-8b89-4a6c-a4ac-24f6a7c36163" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/admin/add_category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/admin/article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/admin/author.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/admin/category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/admin/edit_category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/css/style_login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/slideshow/slide01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/slideshow/slide02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/slideshow/slide03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/TheUnforgiven.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/cayvagio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/csmt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/datnuoc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/hardrock.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/longme.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/loveme.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/nguoithay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/noitinhyeubatdau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/phoipha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/quehuong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/stronger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/images/songs/vetmua.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/includes/database-connection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/view/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01_template/btth01/view/nav.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MGxaLZ76GGUqdJ5x9GIXcws8Gy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/thucHanhWeb01/CSE485_2023&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a98a351e-8b89-4a6c-a4ac-24f6a7c36163" name="Changes" comment="" />
+      <created>1677407788434</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677407788434</updated>
+      <workItem from="1677407790271" duration="114000" />
+      <workItem from="1677407907480" duration="30000" />
+      <workItem from="1677408217802" duration="735000" />
+      <workItem from="1677460751554" duration="5613000" />
+      <workItem from="1677467138524" duration="384000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
