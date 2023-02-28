@@ -2,7 +2,7 @@
 $type     = 'mysql';                 
 $server   = 'localhost';           
 $db       = 'btth01_cse485';            
-$port     = '3306';
+$port     = '3307';
 $charset  = 'utf8mb4';            
 
 $username = 'root';        
