@@ -63,7 +63,7 @@
                             <td>Nhạc trữ tình</td>
                             <td></td>
                             <td>
-                                <a href="edit_category.php?id=1"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="edit_author.php?id=1"><i class="fa-solid fa-pen-to-square"></i></a>
                             </td>
                             <td>
                                 <a href=""><i class="fa-solid fa-trash"></i></a>
@@ -74,7 +74,7 @@
                             <td>Nhạc cách mạng</td>
                             <td></td>
                             <td>
-                                <a href="edit_category.php?id=2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="edit_author.php?id=2"><i class="fa-solid fa-pen-to-square"></i></a>
                             </td>
                             <td>
                                 <a href=""><i class="fa-solid fa-trash"></i></a>
