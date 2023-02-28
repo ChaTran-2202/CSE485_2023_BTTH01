@@ -1,3 +1,9 @@
+<?php
+require '../includes/database-connection.php';
+$sql = "SELECT ma_tloai, ten_tloai FROM theloai";
+$statement = $pdo->query($sql);
+$result = $statement->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,17 +73,18 @@
                                 <a href=""><i class="fa-solid fa-trash"></i></a>
                             </td>
                         </tr>
+                        <?php foreach ($result as $result) { ?>
                         <tr>
-                            <th scope="row">2</th>
-                            <td>Nhạc cách mạng</td>
+                            <th scope="row"><?= $result['ma_tloai']?></th>
+                            <td><?= $result['ten_tloai']?></td>
                             <td>
-                                <a href="edit_category.php?id=2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="edit_category.php?id=<?=$result['ma_tloai']?>"><i class="fa-solid fa-pen-to-square"></i></a>
                             </td>
                             <td>
                                 <a href=""><i class="fa-solid fa-trash"></i></a>
                             </td>
                         </tr>
-                       
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
