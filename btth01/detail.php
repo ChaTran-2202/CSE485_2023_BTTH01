@@ -30,8 +30,14 @@ $sql       = "SELECT baiviet.ma_bviet , baiviet.ten_bhat , theloai.ten_tloai , b
                 INNER JOIN tacgia ON baiviet.ma_tgia = tacgia.ma_tgia 
                 WHERE baiviet.ma_bviet = {$_GET['id']}"; // SQL
 
+<<<<<<< HEAD
 $statement = $pdo->query($sql);   
 $content  = $statement->fetch();
+=======
+
+ $statement = $pdo->query($sql);   
+ $content  = $statement->fetch();
+>>>>>>> origin/hieu
 ?>
 >>>>>>> hieu
 <!DOCTYPE html>
@@ -79,14 +85,14 @@ $content  = $statement->fetch();
 </html>
 =======
     <div  class="d-flex justify-content-evenly">
-        <div style="display: inline-block; ">
-                <div class="card mb-2 col-5" style="width: 50%;">
+        <div class="mt-3 " style="display: inline-block;text-align: center;">
+                <div class="card mb-2 col-5" style="width: 70%;display: inline-block;">
                 <img src= "./images/songs/<?=$songs[$_GET['id']]?>"  class="card-img-top" alt="...">
                
                         </div> 
             </div>
 
-            <div style="display: inline-block; width:600px">
+            <div style="display: inline-block;">
                 <h4 class="card-title  text-primary">
                     <?= $content['ten_bhat'] ?>
                 </h4>
