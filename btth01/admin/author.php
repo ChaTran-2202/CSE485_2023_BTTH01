@@ -1,3 +1,11 @@
+<?php
+    require '../includes/database-connection.php';
+
+    $sql = 'SELECT * FROM tacgia';
+    $statement = $pdo->query($sql);   
+    $authors  = $statement->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,41 +54,29 @@
         <!-- <h3 class="text-center text-uppercase mb-3 text-primary">CẢM NHẬN VỀ BÀI HÁT</h3> -->
         <div class="row">
             <div class="col-sm">
-                <a href="add_author.php" class="btn btn-success">Thêm mới</a>
+                <a href="add_author.php" class="btn btn-success">Add author</a>
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Tên tác giả</th>
-                            <th scope="col">Hình tác giả</th>
-                            <th>Sửa</th>
-                            <th>Xóa</th>
+                            <th scope="col">Author name</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Nhạc trữ tình</td>
-                            <td></td>
-                            <td>
-                                <a href="edit_author.php?id=1"><i class="fa-solid fa-pen-to-square"></i></a>
-                            </td>
-                            <td>
-                                <a href=""><i class="fa-solid fa-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Nhạc cách mạng</td>
-                            <td></td>
-                            <td>
-                                <a href="edit_author.php?id=2"><i class="fa-solid fa-pen-to-square"></i></a>
-                            </td>
-                            <td>
-                                <a href=""><i class="fa-solid fa-trash"></i></a>
-                            </td>
-                        </tr>
-                       
+                   <tbody>
+                        <?php foreach($authors as $author){ ?>
+                            <tr>
+                                <th scope="row"><?=$author['ma_tgia'] ?></th>
+                                <td><?=$author['ten_tgia']?></td>
+                                <td>
+                                    <a href="edit_author.php?id=<?=$author['ma_tgia']?>"><i class="fa-solid fa-pen-to-square"></i></a>
+                                </td>
+                                <td>
+                                    <a href="delete_author.php?id=<?=$author['ma_tgia']?>"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                      <?php  } ?>
                     </tbody>
                 </table>
             </div>

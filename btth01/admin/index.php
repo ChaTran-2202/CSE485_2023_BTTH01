@@ -1,3 +1,7 @@
+<?php
+require '../includes/database-connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,11 +67,16 @@
                 <div class="card mb-2" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title text-center">
-                            <a href="" class="text-decoration-none">Thể loại</a>
+                            <a href="./category.php" class="text-decoration-none">Thể loại</a>
                         </h5>
 
                         <h5 class="h1 text-center">
-                            10
+                            <?php
+                            $sql = "SELECT COUNT(ma_tloai) FROM theloai";
+                            $statement = $pdo->query($sql);
+                            $result = $statement->fetch();
+                            echo $result['COUNT(ma_tloai)'];
+                            ?>
                         </h5>
                     </div>
                 </div>
@@ -81,7 +90,12 @@
                         </h5>
 
                         <h5 class="h1 text-center">
-                            20
+                            <?php
+                            $sql = "SELECT COUNT(ma_tgia) FROM tacgia";
+                            $statement = $pdo->query($sql);
+                            $result = $statement->fetch();
+                            echo $result['COUNT(ma_tgia)'];
+                            ?>
                         </h5>
                     </div>
                 </div>
@@ -95,7 +109,12 @@
                         </h5>
 
                         <h5 class="h1 text-center">
-                            110
+                            <?php
+                            $sql = "SELECT COUNT(ma_bviet) FROM baiviet";
+                            $statement = $pdo->query($sql);
+                            $result = $statement->fetch();
+                            echo $result['COUNT(ma_bviet)'];
+                            ?>
                         </h5>
                     </div>
                 </div>

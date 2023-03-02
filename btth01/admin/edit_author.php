@@ -1,3 +1,11 @@
+<?php
+    require '../includes/database-connection.php';
+    
+        $sql = "SELECT * FROM tacgia WHERE ma_tgia = {$_GET['id']}";
+        $stament = $pdo->query($sql);
+        $content  = $stament->fetch();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,32 +48,26 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main class="container mt-5 mb-5">
         <!-- <h3 class="text-center text-uppercase mb-3 text-primary">CẢM NHẬN VỀ BÀI HÁT</h3> -->
         <div class="row">
             <div class="col-sm">
-                <h3 class="text-center text-uppercase fw-bold">Sửa thông tin tác giả</h3>
-                <form action="process_add_category.php" method="post">
+                <h3 class="text-center text-uppercase fw-bold">Edit Author</h3>
+                <form action="process_add_author.php" method="post">
                 <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatId">Mã tác giả</span>
-                        <input type="text" class="form-control" name="txtCatId" readonly value="1">
+                        <span class="input-group-text" id="lblCatId">ID</span>
+                        <input type="text" class="form-control" name="txtCatId" readonly value=<?= $content['ma_tgia'] ?>>
                     </div>
 
                     <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">Tên tác giả</span>
-                        <input type="text" class="form-control" name="txtCatName" value = "Nhạc trữ tình">
-                    </div>
-
-                    <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">hình tác giả</span>
-                        <input class= " " type="file" name="image" accept="image/*" id="image" ><br>
+                        <span class="input-group-text" id="lblCatName">Name</span>
+                        <input type="text" class="form-control" name="txtCatName" value =<?= $content['ten_tgia'] ?>>
                     </div>
 
                     <div class="form-group  float-end ">
-                        <input type="submit" value="Lưu lại" class="btn btn-success">
-                        <a href="category.php" class="btn btn-warning ">Quay lại</a>
+                        <input type="submit" name = "save" value="Save" class="btn btn-success">
+                        <a href="category.php" class="btn btn-warning ">Back</a>
                     </div>
                 </form>
             </div>
