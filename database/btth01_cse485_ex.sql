@@ -114,8 +114,8 @@ FROM
 WHERE
     ten_bhat LIKE "%yêu%" OR ten_bhat LIKE "%thương%" OR ten_bhat LIKE "%anh%" OR ten_bhat LIKE "%em%" OR tieude LIKE "%yêu%" OR tieude LIKE "%thương%" OR tieude LIKE "%anh%" OR tieude LIKE "%em%";
 
-    /*i. Tạo view vw_Music hiển thị thông tin Danh sách bài viết + tên thể loại + tên tác giả*/
-    /* View: bảng ảo, không chứa dữ liệu về mặt vật lí. Bản chất là 1 đoạn mã SQL được lưu vào server CSDL. Giúp dễ dàng truy vấn, tăng lớp bảo mật (các bảng với dữ liệu bảo mật sẽ không được truy vấn trực tiếp mà chỉ có những dữ liệu xác định được tuồn qua view mà thôi)*/
+    /*i. Tạo layout vw_Music hiển thị thông tin Danh sách bài viết + tên thể loại + tên tác giả*/
+    /* View: bảng ảo, không chứa dữ liệu về mặt vật lí. Bản chất là 1 đoạn mã SQL được lưu vào server CSDL. Giúp dễ dàng truy vấn, tăng lớp bảo mật (các bảng với dữ liệu bảo mật sẽ không được truy vấn trực tiếp mà chỉ có những dữ liệu xác định được tuồn qua layout mà thôi)*/
 CREATE VIEW vw_Music AS SELECT
     ma_bviet,
     tieude,
