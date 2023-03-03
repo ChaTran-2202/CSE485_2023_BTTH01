@@ -1,8 +1,6 @@
 <?php
 require '../includes/database-connection.php';
-$sql = "SELECT * FROM theloai WHERE ma_tloai = {$_GET['id']}";
-$statement = $pdo->query($sql);
-$result = $statement->fetch();
+$id = $_GET['id'];
 ?>
 
 <!DOCTYPE html>
@@ -29,12 +27,12 @@ $result = $statement->fetch();
             <form action="process_add_category.php" method="post">
                 <div class="input-group mt-3 mb-3">
                     <span class="input-group-text" id="lblCatId">Mã thể loại</span>
-                    <input type="text" class="form-control" name="txtCatId" readonly value="<?= $result['ma_tloai']?>">
+                    <input type="text" class="form-control" name="txtCatId" readonly value="<?=$id?>">
                 </div>
 
                 <div class="input-group mt-3 mb-3">
                     <span class="input-group-text" id="lblCatName">Tên thể loại</span>
-                    <input type="text" class="form-control" name="txtCatName" value="<?= $result['ten_tloai']?>">
+                    <input type="text" class="form-control" name="txtCatName" value="">
                 </div>
 
                 <div class="form-group  float-end ">

@@ -56,7 +56,7 @@ $result = $statement->fetchAll();
                                         class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                         <td>
-                            <a href="delete_category.php?id=<?= $result['ma_tloai']?>"><i class="fa-solid fa-trash"></i></a>
+                            <a href="process_add_category.php?id=<?= $result['ma_tloai']?>"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                 <?php }?>

@@ -12,10 +12,10 @@
       <change beforePath="$PROJECT_DIR$/btth01/admin/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/delete_article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/delete_category.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/edit_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/edit_author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/edit_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/edit_category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/process_add_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/process_add_author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/admin/process_add_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/process_add_category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/layout/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/layout/admin_header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1677727728883" duration="673000" />
       <workItem from="1677831463845" duration="2032000" />
       <workItem from="1677835743618" duration="4570000" />
-      <workItem from="1677840440953" duration="10147000" />
+      <workItem from="1677840440953" duration="12896000" />
     </task>
     <servers />
   </component>
