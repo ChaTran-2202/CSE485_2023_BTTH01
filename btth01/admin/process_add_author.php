@@ -1,6 +1,6 @@
 <?php
 require '../includes/database-connection.php';
-if (isset($_POST['addNameAuthor'])) {
+if (isset($_POST['btnAdd'])) {
     $sqlEnd = "SELECT * FROM tacgia ORDER BY ma_tgia DESC";
     $stament = $pdo->query($sqlEnd);
     $index = $stament->fetch();

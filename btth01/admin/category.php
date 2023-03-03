@@ -36,29 +36,30 @@ $result = $statement->fetchAll();
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Nhạc trữ tình</td>
-                    <td>
-                        <a href="edit_category.php?id=1"><i class="fa-solid fa-pen-to-square"></i></a>
-                    </td>
-                    <td>
-                        <a href=""><i class="fa-solid fa-trash"></i></a>
-                    </td>
-                </tr>
-                <?php foreach ($result as $result) { ?>
+<!--                Demo front-end-->
+<!--                <tr>-->
+<!--                    <th scope="row">1</th>-->
+<!--                    <td>Nhạc trữ tình</td>-->
+<!--                    <td>-->
+<!--                        <a href="edit_category.php?id=1"><i class="fa-solid fa-pen-to-square"></i></a>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <a href=""><i class="fa-solid fa-trash"></i></a>-->
+<!--                    </td>-->
+<!--                </tr>-->
+                <?php foreach ($result as $result) {?>
                     <tr>
-                        <th scope="row"><?= $result['ma_tloai'] ?></th>
-                        <td><?= $result['ten_tloai'] ?></td>
+                        <th scope="row"><?= $result['ma_tloai']?></th>
+                        <td><?= $result['ten_tloai']?></td>
                         <td>
-                            <a href="edit_category.php?id=<?= $result['ma_tloai'] ?>"><i
+                            <a href="edit_category.php?id=<?= $result['ma_tloai']?>"><i
                                         class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                         <td>
-                            <a href="delete_category.php?id=<?= $result['ma_tloai'] ?>"><i class="fa-solid fa-trash"></i></a>
+                            <a href="delete_category.php?id=<?= $result['ma_tloai']?>"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
-                <?php } ?>
+                <?php }?>
                 </tbody>
             </table>
         </div>

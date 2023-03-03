@@ -26,14 +26,14 @@ $authors = $statement->fetchAll();
     <!-- <h3 class="text-center text-uppercase mb-3 text-primary">CẢM NHẬN VỀ BÀI HÁT</h3> -->
     <div class="row">
         <div class="col-sm">
-            <a href="add_author.php" class="btn btn-success">Add author</a>
+            <a href="add_author.php" class="btn btn-success">Thêm tác giả</a>
             <table class="table">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Author name</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th scope="col">Tên tác giả</th>
+                    <th>Sửa</th>
+                    <th>Xóa</th>
                 </tr>
                 </thead>
                 <tbody>

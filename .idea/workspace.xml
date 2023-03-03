@@ -9,21 +9,14 @@
       <change beforePath="$PROJECT_DIR$/btth01/admin/add_article.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/add_article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/add_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/add_author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/add_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/add_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/delete_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/delete_author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/admin/delete_article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/admin/delete_category.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/edit_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/edit_author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/edit_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/edit_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/layout/admin_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/process_add_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/process_add_author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/layout/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/view/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/layout/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/btth01_cse485_ex.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/btth01_cse485_ex.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/layout/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/layout/admin_header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +28,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ddbcebc8-f8aa-44d6-afb9-c8064d8e0114" />
+        <option name="url" value="https://github.com/Kuro2202/CSE485_2023_BTTH01.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,20 +56,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/web1/CSE485_2023_BTTH01",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.sourceCode.PHP",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/web1/CSE485_2023_BTTH01&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.PHP&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\web1\CSE485_2023_BTTH01\btth01\layout" />
@@ -87,11 +93,35 @@
       <workItem from="1677558635226" duration="2930000" />
       <workItem from="1677727728883" duration="673000" />
       <workItem from="1677831463845" duration="2032000" />
-      <workItem from="1677835743618" duration="2713000" />
+      <workItem from="1677835743618" duration="4570000" />
+      <workItem from="1677840440953" duration="10147000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
