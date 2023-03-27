@@ -143,3 +143,5 @@ JOIN theloai ON baiviet.ma_tloai = theloai.ma_tloai AND theloai.ten_tloai = ten_
     /*k. Tạo trigger tg_CapNhatTheLoai để khi thêm/sửa/xóa bài viết thì số lượng bài viết trong bảng theloai được cập nhật theo*/
     /*Trigger: Dùng để kiểm tra tính dàng buộc, ngăn chặn thao tác xóa các dữ liệu quan trọng hoặc được tận dụng để có các hàm chạy ngầm.*/
 ALTER TABLE theloai ADD SLBaiViet INT;
+    /*Tạo bảng Users*/
+CREATE TABLE `btth01_cse485`.`users` (`ma_user` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(200) NOT NULL , `pass` VARCHAR(200) NOT NULL , `phanloai` BOOLEAN NOT NULL , PRIMARY KEY (`ma_user`)) ENGINE = InnoDB;

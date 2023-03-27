@@ -6,17 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a98a351e-8b89-4a6c-a4ac-24f6a7c36163" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/add_article.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/add_article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/add_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/add_author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/add_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/add_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/delete_article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/edit_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/edit_author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/edit_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/edit_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/admin/process_add_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/process_add_author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/admin/delete_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/delete_category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btth01/admin/process_add_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/admin/process_add_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btth01/layout/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/layout/admin_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btth01/layout/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/btth01/layout/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/btth01_cse485_ex.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/btth01_cse485_ex.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +40,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -56,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/web1/CSE485_2023_BTTH01&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.PHP&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/web2/CSE485_2023_BTTH02",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.PHP",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\web1\CSE485_2023_BTTH01\btth01\layout" />
@@ -95,6 +91,22 @@
       <workItem from="1677831463845" duration="2032000" />
       <workItem from="1677835743618" duration="4570000" />
       <workItem from="1677840440953" duration="12896000" />
+      <workItem from="1677895479281" duration="27000" />
+      <workItem from="1677909406902" duration="227000" />
+      <workItem from="1677916705587" duration="638000" />
+      <workItem from="1677941019778" duration="1169000" />
+      <workItem from="1677949969748" duration="2047000" />
+      <workItem from="1677999664271" duration="178000" />
+      <workItem from="1678000087134" duration="1286000" />
+      <workItem from="1679028465682" duration="44000" />
+      <workItem from="1679028556589" duration="211000" />
+      <workItem from="1679028874202" duration="1451000" />
+      <workItem from="1679109680962" duration="2862000" />
+      <workItem from="1679645665186" duration="82000" />
+      <workItem from="1679649725918" duration="657000" />
+      <workItem from="1679882219609" duration="2547000" />
+      <workItem from="1679892045261" duration="323000" />
+      <workItem from="1679897024229" duration="4946000" />
     </task>
     <servers />
   </component>

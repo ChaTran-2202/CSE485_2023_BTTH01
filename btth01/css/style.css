@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
+html, body {
+    height: 100%;
+}
 
 body{
     font-family: 'Numans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
 }
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
 .bg-body-tertiary{
     background-color:#fff !important;
 }

@@ -15,7 +15,7 @@ if (isset($_POST['btnAdd'])) {
 if (isset($_POST['btnSave'])){
     $id = $_POST['txtCatId'];
     $name = $_POST['txtCatName'];
-    $sql = "UPDATE theloai SET ten_tloai = ? WHERE ma_tloai = ?";
+    $sql = "UPDATE baiviet JOIN theloai SET ten_tloai = ? WHERE baiviet.ma_tloai = theloai.ma_tloai AND theloai.ma_tloai = ?";
     $statement = $pdo->prepare($sql);
     $result = $statement->execute(array($name, $id));
     header('Location:category.php');
